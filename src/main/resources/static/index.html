@@ -1,0 +1,87 @@
+<html>
+<head>
+<script type="text/javascript">
+function func()
+{
+    var log = document.getElementById("login");
+    var pas = document.getElementById("password");
+    if ((log.value=="java") && (pas.value=="www"))
+    {
+       alert("Добро пожаловать!");
+       document.location.href = "start.html";
+    }
+    else
+    {
+       alert("Ошибка при вводе пары Логин-Пароль!!!");
+
+    }
+}
+
+
+</script>
+
+<style>
+  tr 
+  {
+     height: 50px;
+  }  
+  td 
+  {
+     width: 150px;
+  }
+  span
+  {
+     color: red;
+     font-family: serif;
+     font-size: 20px;      
+  }
+  input
+  {
+     border-style: ridge;
+     border-color: red;
+     border-width: 5px;
+     color: blue;
+     font-family: serif;
+     font-size: 20px;  
+     background-color: white;
+     padding: 5px;         
+  }
+  input:HOVER
+  {
+     border-color: white;
+     color: red;
+  }
+</style>
+</head>
+<body>
+<center>
+<div style="width: 1500px; height: 1000px; background-image: url(fon.png);" id="myfon">
+<table border="0">
+<tr>
+<td>
+<span>Введите Логин:</span>
+</td>
+<td>
+<input type="text" maxlength="10" id="login"/>
+</td>
+</tr>
+<tr>
+<td>
+<span>Введите Пароль:</span>
+</td>
+<td>
+<input type="password" maxlength="10" id="password"/>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<input type="button" value="Вход" onclick="func()"/>
+</td>
+</tr>
+</table>
+</div>
+</center>
+</body>
+</html>
