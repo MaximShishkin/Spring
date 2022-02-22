@@ -1,4 +1,4 @@
-package com.geekbrains.springwebapp;
+package ru.shishkin.spring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
